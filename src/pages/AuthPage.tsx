@@ -59,8 +59,7 @@ const AuthPage = () => {
             const token = response.data.token
 
             localStorage.setItem("token", token)
-            console.log({response, token})
-            // router.push("/dashboard")
+            router.push("/dashboard")
 
 
         } catch (error) {
